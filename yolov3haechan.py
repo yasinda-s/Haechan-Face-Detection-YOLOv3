@@ -12,7 +12,7 @@ net = cv2.dnn.readNet("yolov3_training_last.weights", "yolov3_testing.cfg")
 classes = ["Haechan"]
 
 # Images path
-images_path = glob.glob(r"D:\Google Colab Projects\haechan_detection\*.jpg")
+images_path = glob.glob(r"ADD IMAGES PATH HERE")
 
 layer_names = net.getLayerNames()
 output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
